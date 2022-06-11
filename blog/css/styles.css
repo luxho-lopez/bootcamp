@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #D5DBDB;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kavivanar', cursive;
+    font-weight: normal;
+}
+h2 {
+    font-size: 2rem;
+    color: #A51F10;
+    margin: 0;
+}
+a {
+    color: #DA0090;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    border: 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    /* solo cuando son 2 cajas  */
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+header img {
+    height: 200px;
+    border: 0.5px solid #0B5345;
+    border-radius: 180px;
+}
+
+.leftheader {
+    flex-basis: 45%;
+    text-align: right;
+    padding-right: 0.5rem;
+    /* border: 1px solid #3D1304; */
+}
+
+.rightheader {
+    flex-basis: 55%;
+    margin-top: 2.5rem;
+    padding-left: 0.5rem;
+    /* border: 1px solid green; */
+}
+
+.rightheader h1 {
+    font-size: 2.2rem;
+    color: #0B5345
+}
+
+.rightheader p {
+    margin-top: -1.5rem;
+    font-size: 1.2rem;
+    color: #2471A3;
+}
+
+.posted {
+    font-size: 0.8rem;
+    color: #89A611;
+}
+
+nav {
+    padding: 0;
+    border-top: 2px solid #0B5345;
+    border-bottom: 2px solid #0B5345;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    /* display: flex; */
+    /* flex-flow: row nowrap;
+    justify-content: space-around; */
+}
+
+nav li {
+    display: inline-block;
+    /* flex-basis: 20%; */
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1.5rem; 
+    text-decoration: none;
+    color: #0B5345;
+}
+
+nav a:link {
+    color: #0B5345;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #2C3E50;
+    color: #D5DBDB;
+}
+
+section {
+    border-bottom: 1px solid #2C3E50;
+    margin-bottom: 0.5rem;
+}
+
+article {
+    margin: 3rem;
+}
+
+article img {
+    float: left;
+    margin: 0 1rem 0 1rem;
+    border-radius: 10px;
+}
+
+article .text {
+    text-align: justify;
+}
+
+/* esto ajusta las imagenes al final */
+article:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer {
+    background-color: #D5DBDB;
+    border-top: 2px solid #0B5345;
+    width: 70%;
+    text-align: center;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer img {
+    height: 2.5rem;
+    margin: 0.2rem;
+}
