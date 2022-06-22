@@ -1,0 +1,105 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag1: #ff17e4;
+    --hotmag2: #D065C3;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+    --robo-mono: 'Roboto Mono', monospace;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--mono);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--hotmag2);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--magenta);
+    font-weight: bold;
+}
+
+
+nav {
+    border: 1px solid red;
+    margin: 0;
+    padding: 0 3rem;
+}
+
+#intro {
+    padding-bottom: 10rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--robo-mono);
+}
+
+.name span {
+    font-family: var(--mono);
+    font-size: 3.5rem;
+    color: var(--aqua);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+#contact {
+    margin: 0 auto;
+    border-top: 2px solid var(--dkblue);
+    border-bottom: 2px solid var(--dkblue);
+    background-color: var(--plum);
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 1.3rem;
+    font-family: var(--robo-mono);
+    padding-bottom: 0.8rem;
+}
+
+#contact p {
+    margin: auto;
+    padding: 0.8rem 0;
+    width: 30%;
+    font-size: 1rem;
+}
+
+#contact a {
+    text-decoration: underline;
+}
