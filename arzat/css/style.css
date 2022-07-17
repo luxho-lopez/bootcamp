@@ -1,0 +1,68 @@
+:root {
+    --white: #fefeff;
+    --purple: #48487e;
+    --gray: #f6f6f7;
+    --purpleline: #b5b5b4;
+    --font-size: 1rem;
+    --font-lora: 'Lora', serif;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    font-family: var(--font-lora);
+    font-size: var(--font-size);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    border: 0px solid blue;
+}
+
+nav ul {
+    list-style-type: none;
+    border-bottom: 1.5px solid var(--purpleline);
+    padding: 0 4rem;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /* justify-content: space-around; */
+}
+
+nav li {
+    margin-top: 4px;
+    border: 0;
+    /* background-color: var(--purple); */
+    width: 12rem;
+    text-align: center;
+    display: inline-block;
+}
+
+nav a {
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: var(--purple);
+    margin: 0 auto;
+    padding: 1rem;
+    display: block;
+}
+
+nav .logonav {
+    margin: 0 auto 0 0;
+}
